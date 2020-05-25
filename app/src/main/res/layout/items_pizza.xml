@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvTituloItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/ivImagen"
+            android:text="TextView"
+            android:textSize="18sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_below="@+id/tvTituloItem"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/ivImagen"
+            android:text="TextView"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnMenos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvDescripcion"
+
+            android:layout_marginTop="10dp"
+
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/tvCantItem"
+            android:text="-"
+            app:layout_constraintVertical_bias="0.555"
+            tools:layout_editor_absoluteX="289dp" />
+
+        <Button
+            android:id="@+id/btnMas"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvDescripcion"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="+"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCantItem"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvDescripcion"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/btnMas"
+            android:text="x1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnMas"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/btnMenos" />
+
+        <ImageView
+            android:id="@+id/ivImagen"
+            android:layout_width="163dp"
+            android:layout_height="181dp"
+            app:srcCompat="@drawable/bebidas"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="52dp" />
+
+        <TextView
+            android:id="@+id/tvPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescripcion"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/ivImagen"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
