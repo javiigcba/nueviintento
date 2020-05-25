@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AuthenticatorApp</string>
+    <string name="itemmiUsuario">Mi Usuario</string>
+    <string name="itemotro">Otro</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

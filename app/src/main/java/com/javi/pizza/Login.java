@@ -87,6 +87,17 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        /*
+        mCreateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirregister();
+            }
+        });
+        */
+
+
+
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -138,4 +149,11 @@ public class Login extends AppCompatActivity {
 
 
     }
+
+    /*
+    public void abrirregister(){
+        Intent intent =new Intent (Login.this,Register.class);
+        startActivity(intent);
+    }
+    */
 }
